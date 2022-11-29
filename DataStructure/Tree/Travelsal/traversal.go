@@ -9,34 +9,34 @@ type Node struct {
 }
 
 // 前序遍历（中-左-右）
-func preOrder(root *Node) {
+func PreOrder(root *Node) {
 	if root == nil {
 		return
 	}
 
 	fmt.Println(root.data)
-	preOrder(root.left)
-	preOrder(root.right)
+	PreOrder(root.left)
+	PreOrder(root.right)
 }
 
 // 中序遍历（左-中-右）
-func inOrder(root *Node) {
+func InOrder(root *Node) {
 	if root == nil {
 		return
 	}
 
-	inOrder(root.left)
+	InOrder(root.left)
 	fmt.Println(root.data)
-	inOrder(root.right)
+	InOrder(root.right)
 }
 
 // 后序遍历（左-右-中）
-func postOrder(root *Node) {
+func PostOrder(root *Node) {
 	if root == nil {
 		return
 	}
 
-	inOrder(root.left)
-	inOrder(root.right)
+	PostOrder(root.left)
+	PostOrder(root.right)
 	fmt.Println(root.data)
 }
