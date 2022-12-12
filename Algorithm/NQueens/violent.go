@@ -2,11 +2,6 @@ package NQueens
 
 import "math"
 
-func init() {
-	board = make([]int, n)
-	queenPutMap = make([]bool, n)	// 下标代表列，值代表该列是否存在 Queen
-}
-
 func ViolentN(row int) {
 	// 全部 Queen 摆放完成，判断是否符合逻辑
 	if n == row {
@@ -14,7 +9,7 @@ func ViolentN(row int) {
 
 		for i := 0; i < n; i++ {
 			for j := i+1; j < n; j++ {
-				if math.Abs(float64(i-j)) == math.Abs(float64(board[i]-board[j])) {
+				if math.Abs(float64(i - j)) == math.Abs(float64(board[i] - board[j])) {
 					isLegal = false
 					return
 				}
