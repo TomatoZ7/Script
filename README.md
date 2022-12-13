@@ -11,3 +11,7 @@
 ## 算法
 
 [字符串匹配](Algorithm/StringMatching)
+
+[常见的排序算法](Algorithm/Sort/sort.go)
+
+[N 皇后问题](Algorithm/NQueens)
